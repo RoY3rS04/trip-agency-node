@@ -1,4 +1,4 @@
-import { trip } from "../models/Trip.js"
+import { trip } from "../models/trip.js"
 import { Testimonial } from "../models/testimonial.js"
 
 const homePage = async (req, res) => { //req lo que enviamos, res lo que express responde
