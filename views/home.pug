@@ -1,0 +1,33 @@
+extends ./layouts/index
+
+block slider 
+    .slider
+        h1 Rio de Janeiro
+        em adventure
+
+block content
+    main.container.mt-5 
+        h2.text-center.mb-5 About Us
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe magnam perspiciatis autem id nisi nam eos cum et ad facere. Rerum maxime cumque dolor quae non? Totam ea facere nesciunt.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem fugit eaque tempora repellendus eum dolores totam voluptates. Nam ipsum rerum velit eos incidunt maxime pariatur eveniet eius, officia eligendi!
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="About us image" class="img-fluid")
+
+        include ./layouts/tripsSection
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6
+                    .contenido 
+                        h3 5% discount
+                        p.titulo Trip to Canada
+                        p.fecha March 20, 2023 - March 28, 2023
+                        p.precio $2,500 USD
+
+    .container 
+        h2.mt-5.text-center Testimonials
+
+        include ./layouts/testimonialsSection
